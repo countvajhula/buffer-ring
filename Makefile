@@ -24,7 +24,7 @@ setup-ci:
 		cd .emacs-ci && git pull; \
 	else \
 		echo "--> Cloning emacs-ci repository..."; \
-		git clone https://github.com/countvajhula/emacs-ci.git .emacs-ci; \
+		git clone -b debug-recipe-ci https://github.com/countvajhula/emacs-ci.git .emacs-ci; \
 	fi
 
 clean:
